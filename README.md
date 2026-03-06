@@ -8,21 +8,18 @@ A curated list of protein foundation models and generative models for protein se
 
 The field has evolved from family-specific statistical models to large self-supervised foundation models trained on evolutionary-scale protein datasets.
 
-These models learn representations of protein sequence, structure, and function 
-using large-scale self-supervised learning.
+Taxonomy and model selection are based on the review `Foundation models of protein sequences: a brief overview`, including the distributional view `p(x)`, `p(x, s)`, `p(x | s)`, and `p(x, m)`. 
 
 The repository focuses on models capable of:
+- representation learning
+- generative protein design
+- zero-shot variant effect prediction
+- multimodal protein modeling
 
-• representation learning
-• generative protein design
-• zero-shot variant effect prediction
-• multimodal protein modeling
+Citations are auto-updated in-place using live OpenAlex/`shields.io` badges. The metrics are usually smaller than Google Scholar counts.
 
 If you find this repository useful, please consider starring it.
 
-Taxonomy and model selection are based on the review `Foundation models of protein sequences: a brief overview`, including the distributional view `p(x)`, `p(x, s)`, `p(x | s)`, and `p(x, m)`. 
-
-Citation counts are auto-updated in-place using live OpenAlex/`shields.io` badges. The metrics are usually smaller than Google Scholar counts.
 
 <!-- ## Contents
 - Historical models 
@@ -49,6 +46,7 @@ Early probabilistic and family-level generative models.
 | HMMs | [Hidden Markov Models in Computational Biology](https://doi.org/10.1006/jmbi.1994.1104) | Journal of Molecular Biology | 1994 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW2102122585)](https://openalex.org/W2102122585) | Markovian sequence models for protein families. |
 | Potts / DCA | [Sequence co-evolution gives 3D contacts and structures of protein complexes](https://doi.org/10.7554/elife.03430) | eLife | 2014 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW2120836664)](https://openalex.org/W2120836664) | Pairwise co-evolution modeling for contact and fitness signals. |
 | DeepSequence | [Deep generative models of genetic variation capture the effects of mutations](https://doi.org/10.1038/s41592-018-0138-4) | Nature Methods | 2018 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW2890223884)](https://openalex.org/W2890223884) | Latent variable (VAE) modeling over homologous alignments. |
+| ProtVec | [Continuous distributed representation of biological sequences for deep proteomics and genomics](https://doi.org/10.1371/journal.pone.0141287) | PLOS ONE | 2015 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW1501531009)](https://openalex.org/W1501531009) | k-mer embedding pretraining for protein sequence representations. |
 
 ## Alignment-based models
 Models that leverage multiple sequence alignments or retrieval over homologs.
@@ -80,6 +78,8 @@ Protein foundation models on the amino acid sequence space.
 | ProGen2 | [ProGen2: Exploring the boundaries of protein language models](https://doi.org/10.1016/j.cels.2023.10.002) | Cell Systems | 2023 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4388024559)](https://openalex.org/W4388024559) | Autoregressive generative sequence foundation model. |
 | Ankh | [Ankh : Optimized Protein Language Model Unlocks General-Purpose Modelling](https://doi.org/10.1101/2023.01.16.524265) | Preprint / Workshop | 2023 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4317374308)](https://openalex.org/W4317374308) | Compute-efficient pLM with strong downstream transfer. |
 | xTrimoPGLM | [xTrimoPGLM: Unified 100B-Scale Pre-trained Transformer for Deciphering the Language of Protein](https://doi.org/10.1101/2023.07.05.547496) | Preprint / Workshop | 2023 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4383550741)](https://openalex.org/W4383550741) | 100B-scale protein language model. |
+| ProtHyena | [ProtHyena: A fast and efficient foundation protein language model at single amino acid resolution](https://doi.org/10.1101/2024.01.18.576206) | Preprint / Workshop | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4391097114)](https://openalex.org/W4391097114) | Long-context Hyena architecture for efficient protein language modeling. |
+| PTM-Mamba | [PTM-Mamba: A PTM-aware protein language model with bidirectional gated Mamba blocks](https://doi.org/10.1101/2024.02.28.581983) | Preprint / Workshop | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4392352687)](https://openalex.org/W4392352687) | PTM-aware state-space modeling for scalable sequence learning. |
 | DPLM | [Diffusion Language Models Are Versatile Protein Learners](https://doi.org/10.48550/arxiv.2402.18567) | arXiv (Cornell University) | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4403586429)](https://openalex.org/W4403586429) | Diffusion language modeling for sequence generation. |
 
 ## Sequence and structure modeling `p(x,s)`
@@ -114,6 +114,7 @@ Models combining sequence/structure with text, ontology, or other modalities.
 | Model | Paper | Venue | Year | Citations | Notes |
 | --- | --- | --- | ---: | --- | --- |
 | OntoProtein | [OntoProtein: Protein Pretraining With Gene Ontology Embedding](https://doi.org/10.48550/arxiv.2201.11147) | arXiv (Cornell University) | 2022 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4221157572)](https://openalex.org/W4221157572) | Protein modeling with gene ontology context. |
+| ZymCTRL | [Conditional language models enable the efficient design of proficient enzymes](https://doi.org/10.1101/2024.05.03.592223) | Preprint / Workshop | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4396675754)](https://openalex.org/W4396675754) | EC-conditioned controllable generation of enzyme sequences. |
 | ProtST | [ProtST: Multi-Modality Learning of Protein Sequences and Biomedical Texts](https://doi.org/10.48550/arxiv.2301.12040) | arXiv (Cornell University) | 2023 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4318751307)](https://openalex.org/W4318751307) | Contrastive alignment of proteins and biomedical text. |
 | ProteinDT | [A Text-guided Protein Design Framework](https://doi.org/10.48550/arxiv.2302.04611) | arXiv (Cornell University) | 2023 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4320342754)](https://openalex.org/W4320342754) | Text-guided protein generation framework. |
 | ProTrek | [ProTrek: Navigating the Protein Universe through Tri-Modal Contrastive Learning](https://doi.org/10.1101/2024.05.30.596740) | Preprint / Workshop | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4399285138)](https://openalex.org/W4399285138) | Tri-modal contrastive navigation in protein space. |
