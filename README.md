@@ -9,7 +9,7 @@ A curated list of protein foundation models and generative models for protein se
 The field has evolved from family-specific statistical models to large self-supervised foundation models trained on evolutionary-scale protein datasets.
 
 
-Taxonomy and model selection are based on the review `Foundation models of protein sequences: a brief overview`, including the distributional view `p(x)`, `p(x, s)`, `p(x | s)`, and `p(x | m)`. 
+Taxonomy and model selection are based on the review `Foundation models of protein sequences: a brief overview`, including the distributional view `p(x)`, `p(x, s)`, `p(x | s)`, and `p(x, m)`. 
 
 Citation counts are auto-updated in-place using live OpenAlex badges through `shields.io`. These metrics are usually smaller than, e.g., Google Scholar counts.
 
@@ -17,14 +17,16 @@ Citation counts are auto-updated in-place using live OpenAlex badges through `sh
 - Historical models 
 - Alignment-based models
 - Sequence models `p(x)`
-- Sequence and structure modeling `p(x, s)`
-- Inverse folding `p(x | s)`
-- Multi-modal models `p(x | m)`
+- Sequence and structure modeling `p(x|s)`
+- Inverse folding `p(x|s)`
+- Multi-modal models `p(x,m)` or `p(x|m)`
 - Benchmarks
 - Datasets
 - Libraries -->
 
 ## Overview
+2025 snapshot from our review paper: [_Foundation models of protein sequences: a brief overview_](https://arxiv.org/abs/2505.00671) (Bjerregaard & Groth et al., 2025).
+
 ![Overview](overview.jpg)
 
 ## Historical models
@@ -95,7 +97,7 @@ Sequence generation conditioned on backbone structure.
 | MIF-ST | [Masked inverse folding with sequence transfer for protein representation learning](https://doi.org/10.1093/protein/gzad015) | Protein Engineering Design and Selection | 2022 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4387966974)](https://openalex.org/W4387966974) | Masked inverse folding with sequence transfer learning. |
 | CarbonDesign | [Accurate and robust protein sequence design with CarbonDesign](https://doi.org/10.1038/s42256-024-00838-2) | Nature Machine Intelligence | 2024 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW4398243369)](https://openalex.org/W4398243369) | Robust sequence design with iterative refinement. |
 
-## Multi-modal models `p(x,m)` or `p(x|m)` 
+## Multi-modal models `p(x,m)` 
 Models combining sequence/structure with text, ontology, or other modalities.
 
 | Model | Paper | Venue | Year | Citations | Notes |
@@ -137,5 +139,20 @@ Contributions are welcome. Please open a pull request if you would like to add:
 
 - GitHub description: `A curated list of protein foundation models, protein language models (pLMs), and generative models for sequence, structure, and multimodal protein modeling.` -->
 
+## Further reading
 
+For a brief tour through these papers and the current direction of research, you may be interested in:
 
+```bibtex
+@article{bjerregaard2025foundation,
+  title = {Foundation models of protein sequences: A brief overview},
+  author = {Andreas Bjerregaard and Peter Mørch Groth and Søren Hauberg and Anders Krogh and Wouter Boomsma},
+  url = {https://www.sciencedirect.com/science/article/pii/S0959440X25000223},
+  doi = {https://doi.org/10.1016/j.sbi.2025.103004},
+  journal = {Current Opinion in Structural Biology},
+  volume = {91},
+  pages = {103004},
+  year = {2025},
+  issn = {0959-440X},
+}
+```
