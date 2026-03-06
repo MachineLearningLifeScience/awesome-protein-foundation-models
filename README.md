@@ -8,10 +8,21 @@ A curated list of protein foundation models and generative models for protein se
 
 The field has evolved from family-specific statistical models to large self-supervised foundation models trained on evolutionary-scale protein datasets.
 
+These models learn representations of protein sequence, structure, and function 
+using large-scale self-supervised learning.
+
+The repository focuses on models capable of:
+
+• representation learning
+• generative protein design
+• zero-shot variant effect prediction
+• multimodal protein modeling
+
+If you find this repository useful, please consider starring it.
 
 Taxonomy and model selection are based on the review `Foundation models of protein sequences: a brief overview`, including the distributional view `p(x)`, `p(x, s)`, `p(x | s)`, and `p(x, m)`. 
 
-Citation counts are auto-updated in-place using live OpenAlex badges through `shields.io`. These metrics are usually smaller than, e.g., Google Scholar counts.
+Citation counts are auto-updated in-place using live OpenAlex/`shields.io` badges. The metrics are usually smaller than Google Scholar counts.
 
 <!-- ## Contents
 - Historical models 
