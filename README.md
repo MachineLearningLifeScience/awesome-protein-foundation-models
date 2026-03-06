@@ -1,6 +1,6 @@
 # Awesome Protein Foundation Models
 
-> A curated list of protein foundation models and generative models for protein sequence, structure, and multimodal biological modeling.
+> **A curated list of protein foundation models and generative models for protein sequence, structure, and multimodal biological modeling.**
 
 ![Awesome](https://awesome.re/badge.svg)
 ![Papers](https://img.shields.io/badge/papers-auto--updated-blue)
