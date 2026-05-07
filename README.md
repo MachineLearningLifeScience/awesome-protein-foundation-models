@@ -16,7 +16,7 @@ The repository focuses on models capable of:
 
 Citations are auto-updated in-place using live OpenAlex/`shields.io` badges. Beware that these counts are usually smaller than those observed on Google Scholar.
 
-If you find this repository useful, please consider putting a star for later!
+If you find this repository useful, consider putting a star for later or adding your own resource!
 
 
 <!-- ## Contents
