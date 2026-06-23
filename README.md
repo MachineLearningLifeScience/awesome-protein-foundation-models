@@ -64,13 +64,6 @@ Models that leverage multiple sequence alignments or retrieval over homologs.
 ## Sequence models `p(x)`
 Protein foundation models on the amino acid sequence space.
 
-<!-- Subcategories:
-- **Autoregressive:** ProGen2, xTrimoPGLM
-- **Masked language models:** ProteinBERT, ESM-1b, ESM-2, Ankh
-- **Efficient architectures:** ProtHyena, PTM-Mamba
-- **Family-level models:** UniRep
-- **Diffusion models:** DPLM -->
-
 | Model | Paper | Venue | Year | Citations | Notes |
 | --- | --- | --- | ---: | --- | --- |
 | UniRep | [Unified rational protein engineering with sequence-based deep representation learning](https://doi.org/10.1038/s41592-019-0598-1) | Nature Methods | 2019 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW2980789587)](https://openalex.org/W2980789587) | RNN pretraining for protein representations. |
@@ -88,7 +81,7 @@ Protein foundation models on the amino acid sequence space.
 | ProteinSage | [ProteinSage: From implicit learning to explicit structural constraints for efficient protein language modeling](https://doi.org/10.64898/2026.03.17.712034) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7139012971)](https://openalex.org/W7139012971) | Structure-guided masking with causal language modeling. |
 | AINN-P1 | [AINN-P1: A Compact Sequence-Only Protein Language Model Achieves Competitive Fitness Prediction on ProteinGym](https://doi.org/10.64898/2026.03.26.714619) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7143465519)](https://openalex.org/W7143465519) | Compact sequence-only model with competitive fitness prediction. |
 | EvoFlows | [EvoFlows: Evolutionary Edit-Based Flow-Matching for Protein Engineering](https://arxiv.org/abs/2603.11703) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7135167556)](https://openalex.org/W7135167556) | Evolutionary edit-based flow matching. |
-| ESM-C / ESMC | [Language Modeling Materializes a World Model of Protein Biology](https://doi.org/10.64898/2026.06.03.729735) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7163532908)](https://openalex.org/W7163532908) | Sequence-only ESMC family; scaled protein language modeling for representation learning and ESMFold2. |
+| ESM Cambrian | [Language Modeling Materializes a World Model of Protein Biology](https://doi.org/10.64898/2026.06.03.729735) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7163532908)](https://openalex.org/W7163532908) | Sequence-only ESMC family; scaled protein language modeling for representation learning and ESMFold2. |
 | ProtGPT3 | [ProtGPT3: an Open-source family of Promptable and Aligned Protein Language Models](https://doi.org/10.64898/2026.06.04.730041) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7164031929)](https://openalex.org/W7164031929) | Open autoregressive pLM family for promptable protein sequence generation. |
 | DPLM-Evo | [Towards A Generative Protein Evolution Machine with DPLM-Evo](https://doi.org/10.48550/arxiv.2605.00182) | ICML | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7160178067)](https://openalex.org/W7160178067) | Evolutionary discrete diffusion pLM with explicit substitution, insertion, and deletion operations. |
 | LineageFlow | [LineageFlow: Flow Matching for High-Fidelity Family-Aware Protein Sequence Generation](https://doi.org/10.48550/arxiv.2605.22252) | ICML | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7162071530)](https://openalex.org/W7162071530) | Family-aware protein sequence generation with flow matching and ancestral lineage priors. |
