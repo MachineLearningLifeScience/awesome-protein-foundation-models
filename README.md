@@ -33,7 +33,7 @@ From shortlisted models, I manually verify new additions to make sure the list r
 - Libraries -->
 
 ## Overview
-2025 snapshot from our review paper: [_Foundation models of protein sequences: a brief overview_](https://arxiv.org/abs/2505.00671). 
+2025 snapshot from [_our review paper_](https://www.sciencedirect.com/science/article/pii/S0959440X25000223). 
 
 ![Overview](overview.jpg)
 
