@@ -14,7 +14,7 @@ The repository focuses on models capable of:
 - zero-shot variant effect prediction
 - multimodal protein modeling
 
-Citations are auto-updated in-place using live OpenAlex/`shields.io` badges. Beware that these counts are usually smaller than those observed on Google Scholar.
+Citations are auto-updated in-place using live OpenAlex/`shields.io` badges. Beware that these counts are usually smaller than those observed on Google Scholar. A dash indicates that an OpenAlex record has not yet been identified.
 
 If you find this repository useful, consider putting a star for later (giving updates in the GitHub feed) or adding your own resource!
 
@@ -117,6 +117,7 @@ Generative models over both sequence and structure.
 | IgGM2 | [IgGM2: An All-Atom Foundation Model for Adaptive Immune Receptor Design](https://doi.org/10.64898/2026.07.09.737510) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7167785110)](https://openalex.org/W7167785110) | All-atom immune-receptor structure prediction and target-conditioned CDR co-design. |
 | Chamaileon | [Chamaileon: Cross-Context Binder Design with Contextualized Modeling and Mixed Sampling](https://doi.org/10.48550/arxiv.2607.23518) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7171494357)](https://openalex.org/W7171494357) | Joint sequence-structure binder design across multiple targets and conformational states. |
 | SE(3)-MeanFlow | [SE(3)-MeanFlow: Few-Step Protein Backbone Generation on Lie Groups](https://doi.org/10.48550/arxiv.2607.27431) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7172028373)](https://openalex.org/W7172028373) | Few-step protein backbone generation in the geometry of residue frames. |
+| RFD4-Proteina | [Biomolecular design through latent reasoning with RFD4-Proteina](https://rfd4-proteina.org/assets/paper/RFD4-Proteina.pdf) | Preprint / Workshop | 2026 | — | All-atom biomolecular co-design with a shared chemical latent space, recurrent refinement, and reward-guided search. |
 
 ## Inverse folding `p(x|s)`
 Sequence generation conditioned on backbone structure.
@@ -154,6 +155,7 @@ Models combining sequence/structure with text, ontology, or other modalities.
 | AMix-2 | [AMix-2: Establishing Protein as a Native Modality in Large Language Models](https://doi.org/10.48550/arxiv.2605.30963) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7163080385)](https://openalex.org/W7163080385) | Protein-text diffusion language model for protein understanding and conditional sequence design. |
 | MIMIC | [MIMIC: A Generative Multimodal Foundation Model for Biomolecules](https://doi.org/10.48550/arxiv.2604.24506) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7157154286)](https://openalex.org/W7157154286) | Generative multimodal biomolecular foundation model spanning nucleic acids, proteins, structure, evolution, regulation, and context. |
 | ProtJEPA | [ProtJEPA: A Multimodal Joint-Embedding Predictive Architecture for Protein Biological World Modeling with Multi-Teacher Modality-Attentive Fusion](https://doi.org/10.64898/2026.08.03.742606) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7202032788)](https://openalex.org/W7202032788) | Distills ten biological modalities into transferable sequence-only protein representations. |
+| Prompteina | [Designing Protein Structures from Natural Language](https://doi.org/10.48550/arxiv.2610.13917) | Preprint / Workshop | 2026 | [![cites](https://img.shields.io/badge/dynamic/json?label=cites&query=%24.cited_by_count&url=https%3A%2F%2Fapi.openalex.org%2Fworks%2FW7221520812)](https://openalex.org/W7221520812) | Natural-language-conditioned all-atom protein generation with residue-level text alignment and experimentally validated binders. |
 
 ## Benchmarks
 
